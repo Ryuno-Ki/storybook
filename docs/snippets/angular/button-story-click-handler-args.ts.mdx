@@ -1,0 +1,9 @@
+```ts
+// Button.stories.ts
+
+export const Text = ({ label, onClick }) => <Button [label]="label" (click)="onClick()" />;
+Text.args = {
+  label: 'Hello',
+  onClick: action('clicked'),
+};
+```
